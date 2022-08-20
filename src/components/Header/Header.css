@@ -17,6 +17,11 @@
       color: orange;
   }
   #navbarNav {
-    background: rgba(125, 230, 186, 0.726);
-  
+    background: linear-gradient(to right, rgba(32, 119, 115, 0.95), rgba(46, 149, 92, 0.95), rgba(49, 177, 160, 0.9), rgba(74, 205, 48, 0.85), rgba(148, 230, 41, 0.95));
+
+  }
+
+  .nav-link {
+    color: white;
+
   }
