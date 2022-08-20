@@ -1,1 +1,22 @@
-.Header {}
+.navbar{
+    padding: 0;
+  }
+  
+  .navbar .navbar-nav {
+      float: none;
+      vertical-align: top;
+      justify-content: center;
+      text-align: center;
+  
+    }
+    
+    .navbar .navbar-collapse {
+      text-align: center;
+    }
+    .navbar-light .navbar-nav a.nav-link.active{
+      color: orange;
+  }
+  #navbarNav {
+    background: rgba(125, 230, 186, 0.726);
+  
+  }
