@@ -1,10 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 const List = () => {
   
-  const [newItem, setNewItem] = useState({});
+  const [newItem, setNewItem] = useState("");
   const [items, setItems] = useState([]);
-  const itemInput = useRef(null);
+  // const itemInput = useRef();
 
 // Affter reaload page takes info from localStorage
 
@@ -21,29 +21,30 @@ const List = () => {
     localStorage.setItem("items", JSON.stringify(items));
   }, [items]);
 
-// Delete items value 
+// Delete list value 
 
-  const deleteItem = (id) => {
-    const temItems = items.slice();
-    const index = temItems.findIndex(idx => idx !== id);
-    temItems.splice(index, 1)
+  const deleteItem = (index) => {
 
-    setItems(temItems);
+    items.splice(index, 1)
+    setItems([...items]);
 
   };
 
 
 
   const handleInput = (e) => {
-    setNewItem({ name: e.target.value });
+
+    setNewItem({name: e.target.value});
   };
 
 //
 
   const handleClick = (e) => {
     e.preventDefault();
-    itemInput.current.value = "";
-    setItems([newItem, ...items]);
+    setNewItem("")
+
+    setItems([ ...items, newItem]);
+
   };
 
   return (
@@ -56,7 +57,7 @@ const List = () => {
               id="input"
               type="text"
               className="form-control"
-              ref={itemInput}
+              // value={""}
               onChange={handleInput}
             />
             <button className="btn btn-secondary" onClick={handleClick}>
@@ -65,10 +66,10 @@ const List = () => {
           </div>
           <ul className="list-group">
             {items.length > 0 ? (
-              items.map((items, idx) => (
-                <li key={idx} className="list-group-item">
+              items.map((items, index) => (
+                <li key={index} className="list-group-item">
                   {items.name}
-                  <button className="btn btn-warning float-end" onClick={() => { deleteItem(idx); }}>
+                  <button className="btn btn-warning float-end" onClick={() => { deleteItem(index); }}>
                     Delete
                   </button>
                 </li>
