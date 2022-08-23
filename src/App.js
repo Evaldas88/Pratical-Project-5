@@ -11,13 +11,17 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <div id="container">
         <Header />
+        <div id="main-content">
         <Routes>
           <Route path="/list" element={<List />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </div>
         <Footer />
+        </div>
       </BrowserRouter>
     </>
   );
