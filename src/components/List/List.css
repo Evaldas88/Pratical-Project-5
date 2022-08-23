@@ -1,1 +1,14 @@
-.List {}
+.width{
+    max-width: 50vw;
+    width: 500px;
+    align-items: center;
+}
+
+@media all and (max-width:768px){
+    .card {
+      display: block !important;
+      width: 25rem !important;
+      flex:none !important;
+    }
+}
+
