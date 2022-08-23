@@ -1,15 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Footer.css';
 
 const Footer = () => (
-  <div className="Footer" data-testid="Footer">
-    Footer Component
-  </div>
+      <div className='text-center p-1 bacground' >
+        &copy; {new Date().getFullYear()} Copyright:{' '}
+
+        <p>Evaldas Skačkauskas</p>
+      </div>
+
 );
 
-Footer.propTypes = {};
-
-Footer.defaultProps = {};
 
 export default Footer;
