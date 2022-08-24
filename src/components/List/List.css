@@ -1,13 +1,13 @@
-.purpleButton {
+.button-collor {
   background-color: rgb(26, 49, 153);
   color: white;
   
 }
-.purpleButton:hover {
+.button-collor:hover {
   background-color: rgba(26, 49, 153, 0.756);
   color: rgba(255, 255, 255, 0.634);
 }
-.purpleButton:focus {
+.button-collor:focus {
   background-color: rgb(28, 26, 153);
   color: white;
   border: 0;
