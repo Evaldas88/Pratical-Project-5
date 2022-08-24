@@ -17,25 +17,19 @@ function Header() {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div
-        className="navbar-collapse collapse "
-        id="navbarNav"
-      >
-        <ul className="navbar-nav">
-        
-          <li className="nav-item">
+      <div className="navbar-collapse collapse" id="navbarNav">
+        <div className="navbar-nav">
             <NavLink className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link" } 
-                to="/list">List
+              isActive ? "nav-link active" : "nav-link"
+            }
+              to="/">To Do List
             </NavLink>
-          </li>
-          <li className="nav-item">
             <NavLink className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link" } 
-                to="/about">About
+              isActive ? "nav-link active" : "nav-link"
+            }
+              to="/calc">Calculator
             </NavLink>
-          </li>    
-        </ul>
+        </div>
       </div>
     </nav>
   );
