@@ -61,7 +61,7 @@ const List = () => {
  
   return (
     <div className="height-min mt-5">
-      <div className="container p-5 d-flex justify-content-center mt-5">
+      <div className="container p-5 d-flex justify-content-center mt-5 ">
         <div className=" card w-50 text-bg-light">
           <div className="card-body">
             <h1 className=" card-title p-5">What's the Plan for Today?</h1>

@@ -20,7 +20,7 @@
 @media all and (max-width:768px){
   .card {
     display: block !important;
-    width: 25rem !important;
+    width: 20rem !important;
     flex:none !important;
   }
 }
