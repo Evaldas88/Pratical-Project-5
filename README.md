@@ -7,12 +7,6 @@ Project is created with:
 
 The goal of the project is to learn react.
 
-# Project Status
-
-This project is completed.
-
-# Project Screen Shot(s)
-
 
 # Installation and Setup Instructions
 
@@ -23,6 +17,7 @@ First you need to have Node.js if you don't have it, you can download it from he
 Clone down this repository. You will need node and npm installed globally on your machine.
 
 Installation:
+
 
 npm install
 
@@ -38,7 +33,8 @@ To Visit App:
 
 localhost:3000/
 
+Close  App you need  in terminal use comand ctrl + c or kill terminal.
 
 
 
-
+###
