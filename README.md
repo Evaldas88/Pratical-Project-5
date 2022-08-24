@@ -12,7 +12,6 @@ The goal of the project is to learn react.
 This project is completed.
 
 # Project Screen Shot(s)
-<img src="C:\Users\pc\Downloads\2.png" width="400" height="790" >
 
 
 # Installation and Setup Instructions
