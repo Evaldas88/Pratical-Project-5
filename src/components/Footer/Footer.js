@@ -2,7 +2,6 @@ import React from 'react';
 
 const Footer = () => (
   <div className="main-footer">
-
       <footer className=" text-center ">
         <div className="container p-1">
           <section className="mb-1">
