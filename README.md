@@ -2,8 +2,8 @@
 
 Project is created with:
 
-    *Bootstrap v5.2
-    *React
+    Bootstrap v5.2
+    React
 
 The goal of the project is to learn react.
 
@@ -12,7 +12,7 @@ The goal of the project is to learn react.
 
 You need to use :
 
-First you need to have Node.js if you don't have it, you can download it from here:  https://nodejs.org/en/
+First you need to have Node.js. If you don't have it, you can download it from here:  https://nodejs.org/en/
 
 Clone down this repository. You will need node and npm installed globally on your machine.
 
@@ -35,6 +35,8 @@ localhost:3000/
 
 Close  App you need  in terminal use comand ctrl + c or kill terminal.
 
+# How it's look
+
+You can see in this link: https://evaldas88.github.io/Pratical-Project-5/
 
 
-###
