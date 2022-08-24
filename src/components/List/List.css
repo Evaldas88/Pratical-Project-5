@@ -17,3 +17,10 @@
   background: rgba(6, 22, 53, 0.356);
 
 }
+@media all and (max-width:768px){
+  .card {
+    display: block !important;
+    width: 25rem !important;
+    flex:none !important;
+  }
+}
