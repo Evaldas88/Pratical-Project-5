@@ -1,27 +1,27 @@
-.navbar{
-    padding: 0;
-  }
-  
-  .navbar .navbar-nav {
-      float: none;
-      vertical-align: top;
-      justify-content: center;
-      text-align: center;
-  
-    }
-    
-    .navbar .navbar-collapse {
-      text-align: center;
-    }
-    .navbar-light .navbar-nav a.nav-link.active{
-      color: orange;
-  }
-  #navbarNav {
-    background: linear-gradient(to right, rgba(43, 133, 58, 0.95), rgba(46, 149, 92, 0.95), rgba(49, 177, 160, 0.9), rgba(74, 205, 48, 0.85), rgba(148, 230, 41, 0.95));
+.navbar {
+  padding: 0;
+}
 
-  }
+.navbar .navbar-nav {
+  float: none;
+  vertical-align: top;
+  justify-content: center;
+  text-align: center;
 
-  .nav-link {
-    color: white;
+}
 
-  }
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-light .navbar-nav a.nav-link.active {
+  color: orange;
+}
+
+#navbarNav {
+  background: linear-gradient(to right, rgba(32, 40, 119, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
+}
+.nav-link {
+  color: white;
+
+}

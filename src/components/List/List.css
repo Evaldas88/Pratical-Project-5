@@ -1,14 +1,19 @@
-.width{
-    max-width: 50vw;
-    width: 500px;
-    align-items: center;
+.purpleButton {
+  background-color: rgb(26, 49, 153);
+  color: white;
+  
+}
+.purpleButton:hover {
+  background-color: rgba(26, 49, 153, 0.756);
+  color: rgba(255, 255, 255, 0.634);
+}
+.purpleButton:focus {
+  background-color: rgb(28, 26, 153);
+  color: white;
+  border: 0;
 }
 
-@media all and (max-width:768px){
-    .card {
-      display: block !important;
-      width: 25rem !important;
-      flex:none !important;
-    }
-}
+.card-body {
+  background: rgba(6, 22, 53, 0.356);
 
+}

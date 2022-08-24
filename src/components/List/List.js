@@ -2,9 +2,11 @@ import React, { useState, useRef, useEffect } from "react";
 import './List.css';
 const List = () => {
 
-  const [newItem, setNewItem] = useState("");
+  const [newList, setNewList] = useState("");
   const [items, setItems] = useState([]);
-  const itemInput = useRef();
+  const itemInput = useRef(null);
+  const [itemErrorMsg, setItemErrorMsg] = useState("")
+
   // Affter reaload page takes info from localStorage
 
   useEffect(() => {
@@ -24,20 +26,12 @@ const List = () => {
   // Delete list value 
 
   const deleteItem = (index) => {
-
     items.splice(index, 1)
     setItems([...items]);
-
   };
 
-
-
   const handleInput = (e) => {
-
-
-    setNewItem({ name: e.target.value })
-
-
+    setNewList({ name: e.target.value });
   };
 
 
@@ -46,49 +40,50 @@ const List = () => {
     e.preventDefault();
     itemInput.current.value = "";
 
-    // this prevent for input dublicate and to add the  empty input 
-    if (newItem !== "") {
-      setItems([...items, newItem]);
-      setNewItem("")
+    if (newList === "") {
+      setItemErrorMsg("Can't leave the title blank");
+
+    }
+    else {
+      let updateItem = JSON.stringify([...items, newList]);
+      localStorage.setItem("items", updateItem);
+      setNewList("")
+      setItems([...items, newList]);
+      setItemErrorMsg("")
     };
   };
 
-  const handleKeyDown = event => {
 
-    if (event.key === 'Enter' && newItem !== "") {
-      handleInput(event)
-      handleClick(event)
-    }
-  };
   return (
-
-    <div className="container mt-5 ">
-      <div className="d-flex justify-content-center">
-        <div className=" card  width text-bg-light text-center">
+    <div className="height-min mt-5">
+      <div className="container p-5 d-flex justify-content-center mt-5">
+        <div className=" card w-50 text-bg-light">
           <div className="card-body">
             <h1 className="card-title">To do list</h1>
-            <div className="row p-3">
-              <input
-                id="input"
-                type="text"
-                className="form-control"
-                ref={itemInput}
-                onChange={handleInput}
-                onKeyDown={handleKeyDown}
-              />
-              <button className="btn btn-info" onClick={handleClick}>
-                <span class="material-symbols-outlined">
-                  arrow_forward_ios
-                </span>              </button>
-            </div>
-            <ul className="list-group">
+            <form className="col-12 d-flex m-3 justify-content-center pe-3">
+              <div className="col-5 ">
+
+                <input
+                  className="form-control"
+                  ref={itemInput}
+                  onChange={handleInput}
+                />              {itemErrorMsg && <p className="text-danger">{itemErrorMsg}</p>}
+
+              </div>
+
+              <div>
+                <button className="btn purpleButton  ms-3" onClick={handleClick}>
+                  <span class="material-symbols-outlined">arrow_forward_ios</span>
+                </button>
+              </div>
+            </form>
+            <ul className="list-group ">
               {items.length > 0 ? (
                 items.map((items, index) => (
-                  <li key={index} className="list-group-item">
+                  <li key={index} className="list-group-item mt-2">
                     {items.name}
-                    <button className="btn btn-warning float-end" onClick={() => { deleteItem(index); }}>
-                      Delete
-                    </button>
+                    <button className="btn purpleButton float-end" 
+                    onClick={() => { deleteItem(index); }}>X</button>
                   </li>
                 ))
               ) : (
