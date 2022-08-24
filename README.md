@@ -35,7 +35,7 @@ localhost:3000/
 
 Close  App you need  in terminal use comand ctrl + c or kill terminal.
 
-# How it's look
+# How App look
 
 You can see in this link: https://evaldas88.github.io/Pratical-Project-5/
 
