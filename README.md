@@ -9,7 +9,10 @@ The goal of the project is to learn react.
 
 # App Screenshots
 
-
+<p float="left">
+    <img src="src\components\Images\photo1.png" width="350" >     
+    <img src="src\components\Images\photo2.png" width="350" > 
+</p> 
 
 # Installation and Setup Instructions
 
