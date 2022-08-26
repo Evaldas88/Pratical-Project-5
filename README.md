@@ -7,6 +7,9 @@ Project is created with:
 
 The goal of the project is to learn react.
 
+# App Screenshots
+
+
 
 # Installation and Setup Instructions
 
