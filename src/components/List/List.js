@@ -52,6 +52,14 @@ const List = () => {
     };
   };
 
+  // Edit list values
+
+  const handleEdit = (index) => {
+    let newName = prompt("Edit task");
+    const editedItems = JSON.parse(localStorage.getItem("items"));
+    editedItems[index].name = newName;
+    setItems(editedItems);
+  };
  
   return (
     <div className="height-min mt-5">
@@ -84,6 +92,10 @@ const List = () => {
                     {items.name}
                     <button className="btn button-collor float-end"
                       onClick={() => { deleteItem(index); }}>X</button>
+                       <button onClick={() => { handleEdit(index); }}
+                      className="btn button-collor  float-end mx-2">
+                      Edit
+                    </button>
                   </li>
                 ))
               ) : (
