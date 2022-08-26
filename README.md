@@ -1,4 +1,4 @@
-# This App To-do list
+# This App 
 
 Project is created with:
 
