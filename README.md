@@ -1,4 +1,4 @@
-# This App 
+# This To-do list and calculator App 
 
 Project is created with:
 
