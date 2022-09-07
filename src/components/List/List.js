@@ -5,7 +5,6 @@ const List = () => {
   const [newList, setNewList] = useState("");
   const [items, setItems] = useState([]);
   const [errorMsg, setErrorMsg] = useState(false)
- 
 
   const itemInput = useRef(null);
 
@@ -36,6 +35,13 @@ const List = () => {
     setNewList({ name: e.target.value });
   };
 
+  const handleEdit = (index) => {
+    let newName = prompt("Edit task");
+    const editedItems = JSON.parse(localStorage.getItem("items"));
+    editedItems[index].name = newName;
+    setItems(editedItems);
+  };
+
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -52,14 +58,6 @@ const List = () => {
     };
   };
 
-  // Edit list values
-
-  const handleEdit = (index) => {
-    let newName = prompt("Edit task");
-    const editedItems = JSON.parse(localStorage.getItem("items"));
-    editedItems[index].name = newName;
-    setItems(editedItems);
-  };
  
   return (
     <div className="height-min mt-5">
@@ -70,11 +68,9 @@ const List = () => {
             <form className="col-12 d-flex m-3 justify-content-center pe-3">
               <div className="col-5 ">
                 <input
-                type="text"
                   className="form-control"
                   ref={itemInput}
                   onChange={handleInput}
-
                 />
                 {errorMsg && <div className="text-danger">Please fill the input field</div>}
               </div>
@@ -92,7 +88,7 @@ const List = () => {
                     {items.name}
                     <button className="btn button-collor float-end"
                       onClick={() => { deleteItem(index); }}>X</button>
-                       <button onClick={() => { handleEdit(index); }}
+                    <button onClick={() => { handleEdit(index); }}
                       className="btn button-collor  float-end mx-2">
                       Edit
                     </button>
