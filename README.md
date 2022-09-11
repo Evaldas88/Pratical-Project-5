@@ -44,9 +44,9 @@ Close  App you need  in terminal use comand ctrl + c or kill terminal.
 
 # You can check the application live here
 
- https://evaldas88.github.io/Pratical-Project-5/
+ https://github.com/Evaldas88/To-do-list-and-calc.git
 
- # Status
+# Status
 
  Project is completed.
 
