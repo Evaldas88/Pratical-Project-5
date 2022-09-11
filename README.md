@@ -2,8 +2,8 @@
 
 Project is created with:
 
-    Bootstrap v5.2
-    React
+* Bootstrap v5.2
+* React
 
 The goal of the project is to learn react.
 
@@ -20,7 +20,10 @@ You need to use :
 
 First you need to have Node.js. If you don't have it, you can download it from here:  https://nodejs.org/en/
 
-Clone down this repository:  $ git clone  https://github.com/Evaldas88/To-do-list-and-calc.git
+Clone down this repository:  
+
+
+            $ git clone  https://github.com/Evaldas88/To-do-list-and-calc.git
 
 You will need node and npm installed globally on your machine.
 
