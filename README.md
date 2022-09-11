@@ -29,19 +29,19 @@ You will need node and npm installed globally on your machine.
 
 Installation:
 
-npm install
+* npm install
 
 To Run Test Suite:
 
-npm test
+* npm test
 
 To Start Server:
 
-npm start
+* npm start
 
 To Visit App:
 
-localhost:3000/
+* localhost:3000/
 
 Close  App you need  in terminal use comand ctrl + c or kill terminal.
 
@@ -52,5 +52,7 @@ Close  App you need  in terminal use comand ctrl + c or kill terminal.
 # Status
 
  Project is completed.
+
+
 
 
