@@ -20,7 +20,7 @@ You need to use :
 
 First you need to have Node.js. If you don't have it, you can download it from here:  https://nodejs.org/en/
 
-Clone down this repository:  $ git clone https://github.com/Evaldas88/Pratical-Project-5.git. 
+Clone down this repository:  $ git clone  https://github.com/Evaldas88/To-do-list-and-calc.git
 
 You will need node and npm installed globally on your machine.
 
@@ -44,8 +44,8 @@ Close  App you need  in terminal use comand ctrl + c or kill terminal.
 
 # You can check the application live here
 
- https://github.com/Evaldas88/To-do-list-and-calc.git
-
+ https://evaldas88.github.io/To-do-list-and-calc/
+ 
 # Status
 
  Project is completed.
